@@ -1,0 +1,62 @@
+/*
+$primary:   #007bff;
+$secondary: #6c757d;
+$success:   #28a745;
+$info:      #17a2b8;
+$warning:   #ffc107;
+$danger:    #dc3545;
+*/
+$light:     #f8f9fa;
+$dark:      #343a40;
+
+$text-black: #343a40;
+$text-white: rgba(white, .9);
+
+$rounded-borders: 15px;
+
+.timeline-body {
+    position: relative;
+    border-radius: 0 $rounded-borders $rounded-borders 0;
+    padding: 5px 0;
+  
+    &:after {
+      // Left Border
+      content: "";
+      width: 4px;
+      height: 100%;
+      background-color: $primary;
+      position: absolute;
+      left: -4px;
+      top: 0;
+    }
+  
+    .timeline-item {
+      position: relative;
+  
+      &:after {
+        // Circle
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 4px solid $primary;
+        background-color: $light;
+        position: absolute;
+        left: -12px;
+        top: 8px;
+        z-index: 10;
+      }
+  
+      .content {
+        margin: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed $dark;
+  
+        .date {
+          margin-top: -5px;
+          margin-bottom: 15px;
+          color: #6c757d;
+        }
+      }
+    }
+  }

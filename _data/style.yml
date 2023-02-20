@@ -1,0 +1,12 @@
+#Color Customization
+#highlight: "#54bfff"
+#white: "#FF0000"
+#black: "#000"
+
+#Image Customization
+header-image: "../img/header-dark2.jpg"
+contact-image: "../img/contact.png"
+favicon: "/assets/img/favicon.png"
+favicon: "/assets/img/favicon.png"
+#Font Awesome icon for portfolio grid when an item is hovered over
+#portfolio-icon: fas fa-expand-arrows-alt fa-3x #default: fas fa-plus fa-3x

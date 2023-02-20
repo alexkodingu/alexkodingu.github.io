@@ -1,0 +1,103 @@
+about:
+  title: About
+  body: "Versatile DevOps engineer with a great understanding of IT system. I'm a curious person that likes to always learn new technologies that improve our standards.
+I enjoyed enhancing the infrastructure and methodology to deliver better services. Finding the best solution matching the organization and actual system is always challenging.  
+I'm seeking to strengthen my skill and outcome new challenge. When I'm not behind a computer, you have high chance to find me in a pool or on a bike"
+
+education:
+  title: Ecudation
+  list:
+    - title: Engineering degree in computing, multimedia and networking
+      from: 2009
+      to: 2012
+
+    - title: Technological university diploma in network and telecommunication (DUT, France)
+      from: 2007
+      to: 2009
+
+    - title: High school diploma in electronic
+      from: 2004
+      to: 2007
+
+work:
+  title: Work experience
+  list:
+    - title: Freelance
+      from: February 2022
+      to: present
+      description: Starting new chalenge, to provide my skills directly.
+  
+    - title: DevOps Engineer (Orange Business Services, France)
+      from: June 2020
+      to: October 2022
+      description: Transforming our customers IT to improve their cloud usages with the twelve-factor methodology.
+  
+    - title: Engineer cloud expert (Orange Business Services, France)
+      from: February 2017
+      to: June 2020
+      description: Assisting customers to embrace cloud technologies.
+
+    - title: Systems integrator (SopraSteria, France)
+      from: April 2013
+      to:  August 2015
+      description: Integration of applications for the new French military SI on theaters. I had to follow high technicals and securities constraint.
+
+    - title: PHP Developer (France)
+      from: March 2013
+      to: April 2013
+      description: I was developing upgrade of an application to manage backbone's troubles on large telecomuncation network.
+
+    - title: R&D engineer for Home Automation IoT (Orange, France)
+      from: September 2009
+      to: September 2012
+      description: Creation of Home Automation application to make the home smarter.
+  
+    - title: Helpdesk for bank’s controller (Bank company, France)
+      from: April 2009
+      to: August 2009
+      description: Doing level 2 supports on bank's controllers to ensure the highest uptime. I had to follow strict security protocol to protect the systems.
+
+skills:
+  - title: Cloud
+    percentage: 80
+    color: success
+    name: Openstack, Huawei cloud, Azure, IBM cloud, AWS, GCP, VMware
+
+  - title: Programmation
+    percentage: 80
+    color: info
+    name: Bash, Python, Terraform, Powershell
+
+  - title: CI/CD
+    percentage: 75
+    color: info
+    name: Gitlab, github, bitbucket, circle ci, Artifactory, SonarQube
+
+  - title: Container
+    name: Docker, Kubernetes, Helm, gatekeeper
+    percentage: 75
+    color: sucess
+
+  - title: Network
+    name: Firewall, VPN, BGP, MPLS
+    percentage: 60
+
+  - title: Migration
+    name: Carbonite Move, cloudendure, Huawei SMS
+    percentage: 75
+
+  - title: Language
+    list:
+      - name: French
+        percentage: 100
+        color: info
+      - name: English
+        percentage: 95
+        color: success
+      - name: Japanese
+        percentage: 10
+        color: success
+
+  - title: Soft
+    percentage: 100
+    name: Agile, autonomous, knowledge sharing, critical thinking, team spirit

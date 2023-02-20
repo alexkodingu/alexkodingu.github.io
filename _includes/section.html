@@ -1,0 +1,22 @@
+<!-- Section -->
+<section class="page-section {{ include.class }}" id="{{ include.content.title | downcase }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        {%- if include.content.title -%}        
+          <h2 class="section-heading text-uppercase">{{ include.content.title | default: "About" }}</h2>
+        {%- endif -%}
+        {%- if include.content.text -%}
+          <h3 class="section-subheading text-muted">{{ include.content.text | default: "" }}</h3>
+        {%- endif -%}
+        {%- if include.content.body -%}
+          <div class="text-muted">{{ include.content.body | markdownify }}</div>
+        {%- endif -%}
+        {%- if include.content.button -%}
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ include.content.button.link}}">{{ include.content.button.text }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section -->

@@ -1,0 +1,25 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ include.timeline.title | markdownify | default: "About" }}</h2>
+        {%- if include.timeline.text -%}
+          <h3 class="section-subheading text-muted">{{ include.timeline.text }}</h3>
+          {%- endif -%}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="timeline-body bg-themed">
+          {% for item in include.timeline.list %}
+            <div class="timeline-item">
+              <div class="content">
+                <h4>{{ item.title }}</h4>
+                <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
+                <p>{{ item.description }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+</div>

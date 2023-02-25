@@ -1,3 +1,16 @@
+japan:
+  title: "My Japanese profile"
+  list:
+    - name: "Lancers"
+      title: "Lancers"
+      url: "https://www.lancers.jp/profile/alexkodingu"
+    - name: "wantedly"
+      title: "Wantedly"
+      url: "https://www.wantedly.com/id/alexkodingu"
+email:
+  title: "E-mail"
+  # toto@toto.com in base64
+
 lancers:
   title: "Lancers.jp"
   text: "You can contact me on lancers"

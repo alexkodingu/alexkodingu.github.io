@@ -1,0 +1,19 @@
+<div class="project card">
+    <div class="card-body">
+        {%- if project.img -%}
+            <img class="card-img-top" src="{{ project.img }}" alt="{{ project.name }}" />
+        {%- endif -%}
+        <h5 class="card-title text-center">
+            {%- if project.link -%}
+                <a href="{{ project.link.url }}" class="fab fa-{{ project.link.type }}" ></a> |&nbsp;
+            {%- endif -%}
+            {{ project.name }}
+        </h5>
+        <p class="card-text">{{ project.desc }}</p>
+        <p class="card-text">
+            {%- for tool in project.tools -%}
+            <span class="badge badge-pill text-light bg-primary border-primary ml-1">{{ tool }}</span>
+            {%- endfor -%}
+        </p>
+    </div>
+</div>

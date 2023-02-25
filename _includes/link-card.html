@@ -1,0 +1,17 @@
+  <a href="{{ project_url }}" class="project card text-themed" {%- if external and site.open_new_tab -%} target="_blank" {%- endif -%}>
+    {%- if project_img -%}
+      <img id="{{ project_id }}-img" class="card-img-top" src="/assets/img/logo/{{ project_logo }}" alt="{{ project_name }}" />
+    {%- endif -%}
+    {%- if project_title OR project_desc-%}
+      <div class="card-body">
+        {%- if project_title -%}
+          <h5 id="{{ project_id }}-name" class="card-title text-center">
+          {{ project_title }}
+          </h5>
+        {%- endif -%}
+        {%- if project_desc -%}
+          <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </a>

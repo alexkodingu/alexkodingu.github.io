@@ -22,13 +22,17 @@ author     : Alexandre
   # path: assets\img\clients\creative-market.jpg
   # height: 60 #height in px, defaults to 52px
 
-locale: "en-US" # See available languages in _data/sitetext.yml
+home:
+  avatar: /assets/img/avatar.jpg
+  name: Alexandre
+  #text: DevOps Engineer
+  text: "Hungry tech learner who improve systems efficiency and security"
 
-analytics:
-  google: #Google Analytics tracking code here
-
-collections:
-  portfolio:
+social:
+  - url: https://gitlab.com/alexkodingu
+    icon: "fab fa-gitlab"
+  - url: https://github.com/alexkodingu
+    icon: "fab fa-github"
 
 markdown: kramdown
 

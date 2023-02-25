@@ -35,21 +35,21 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-      {%- if site.data.home.prez.avatar -%}
-      <img class="rounded-circle img-thumbnail img-fluid mx-auto" width="300px" src="{{ site.data.home.prez.avatar }}" alt="avatar" >
+      {%- if site.home.avatar -%}
+      <img class="rounded-circle img-thumbnail img-fluid mx-auto" width="300px" src="{{ site.home.avatar }}" alt="avatar" >
       {%- endif -%}
-      {%- if site.data.home.prez.name -%}
-      <div class="intro-heading text-uppercase">{{ site.data.home.prez.name | markdownify }}</div>
+      {%- if site.home.name -%}
+      <div class="intro-heading text-uppercase">{{ site.home.name | markdownify }}</div>
       {%- endif -%}
-	  {%- if site.data.home.prez.text -%}
-        <div class="intro-lead-in">{{ site.data.home.prez.text | markdownify }}</div>
-	  {%- endif -%}
-	  {%- if site.data.home.prez.body -%}
-        <div>{{ site.data.home.prez.body | markdownify }}</div>
-	  {%- endif -%}
-	  {%- if site.data.home.header.button -%}
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}">{{ site.data.home.header.button }}</a>
-	  {%- endif -%}
+      {%- if site.home.text -%}
+          <div class="intro-lead-in text-primary">{{ site.home.text | markdownify }}</div>
+      {%- endif -%}
+      {%- if site.home.body -%}
+          <div>{{ site.home.body | markdownify }}</div>
+      {%- endif -%}
+      {%- if site.data.home.header.button -%}
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}">{{ site.data.home.header.button }}</a>
+      {%- endif -%}
       </div>
     </div>
   </header>

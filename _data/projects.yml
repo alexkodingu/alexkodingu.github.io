@@ -1,0 +1,58 @@
+title: "projects"
+body: "Most of the projects don't have link as they were done under contract"
+list:
+  -
+    name: Agile Coach
+    date: 2022-07
+    desc: Coaching a transversal team that improve tooling for the delivery squads. Organization of the team through the agile ceremony depending on the products' owner requirements.
+    tools:  [agile, jira, scrum]
+  -
+    name: Tooling for cloud training session
+    date: 2022-06
+    desc: Development of tools to ease the training session. Python's scripts were managing the users and environments. The scripts were tested and running through gitlab-ci. At each session, the trainer should execute a schedule pipeline manually with required parameters.
+    tools:  [HuaweiCloud, Openstack, python, pytest, terraform, gitlab, sonarqube]
+  -
+    name: Scheduler for HuaweiCloud
+    date: 2022-08
+    desc: Python's scripts running into function, stopping and starting the resources depending of their tags. A terraform module was made for an easy deploiement.
+    tools:  [HuaweiCloud, CloudFunction, python, py-test, terraform, gitlab, sonarqube, artifactory]
+  -
+    name: Improve KPI visibility
+    date: 2022-01
+    desc: Passing the projects board's data into an elastic Stack to ease the global visibility of our deals and pre-sales.
+    tools:  [gitlab, Elastic Stack, kubernetes, nginx Ingress]
+  -
+    name: FinOps on IBMCloud
+    date: 2021-03
+    desc: Python application running in cloud function reducing the cost of Kubernetes clusters in IBM cloud.
+    tools:  [github, CircleCI, sonarqube, artifactory, IBMCloud, cloudfunction, kubernetes, python, py-test, terraform]
+  -
+    name: Helm factory
+    date: 2021-10
+    desc: Helm repository with helm chart template to ease squads own development. Each chart was tested in CI with kind and was validating security compliancy of the company gatekeeper policy before the publication.
+    tools:  [github, CircleCI, sonarqube, artifactory, kubernetes, helm, kind, OPA Gatekeeper]
+  -
+    name: Containerize applications
+    date: 2021-10
+    desc: Create dockerfile and ease it's deployment in the cloud with terraform and cloud-init on virtual server.
+    tools:  [bitbucket, docker, terraform, cloud-init, openstack]
+  -
+    name: Infrastructure deployment
+    date: 2021-08
+    desc: Deploy cloud infrastructure with terraform from gitlab.
+    tools:  [openstack, gitlab, terraform]
+
+  -
+    name: Example no link
+    date: 2018-01
+    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    tools:  [github, jekyll]
+
+  -
+    name: Example with link
+    date: 2018-01
+    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    tools:  [github, jekyll]
+    link: 
+      url: "https://github.com/"
+      type: "github"

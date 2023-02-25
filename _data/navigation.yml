@@ -1,5 +1,7 @@
 nav:
   - title: "Resume"
     url: /resume/
+  - title: "projects"
+    url: /projects/
   - title: "Contact"
     url: /contact/

@@ -7,17 +7,29 @@ I'm seeking to strengthen my skill and outcome new challenge. When I'm not behin
 education:
   title: Ecudation
   list:
-    - title: Engineering degree in computing, multimedia and networking
+    - title: Engineering degree in computing, multimedia and networking (France)
       from: 2009
       to: 2012
 
-    - title: Technological university diploma in network and telecommunication (DUT, France)
+    - title: Technological university diploma in network and telecommunication (France)
       from: 2007
       to: 2009
 
-    - title: High school diploma in electronic
+    - title: High school diploma in electronic (France)
       from: 2004
       to: 2007
+
+certification:
+  title: Certification
+  list:
+    - title: GCP Associate Cloud Engineer
+      from: November 2021
+
+    - title: Kubernetes for App Developers
+      from: March 2021
+
+    - title: Azure Solution Architect Expert (expired)
+      from: Sept 2020
 
 work:
   title: Work experience

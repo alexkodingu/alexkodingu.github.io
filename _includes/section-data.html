@@ -1,0 +1,44 @@
+<!-- Section -->
+{%- if include.content.title -%}
+<section class="page-section {{ include.class }}" id="{{ include.content.title | downcase }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        {%- if include.content.title -%}        
+          <h2 class="section-heading text-uppercase">{{ include.content.title | default: "About" }}</h2>
+        {%- endif -%}
+        {%- if include.content.text -%}
+          <h3 class="section-subheading text-muted">{{ include.content.text | default: "" }}</h3>
+        {%- endif -%}
+        {%- if include.content.body -%}
+          <div class="text-muted">{{ include.content.body | markdownify }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+{%- endif -%}
+    {%- if include.content -%}
+    <div class="card-columns">
+      <!-- Local Projects -->
+      {% for project in include.content.list  %}
+          {%- assign project_id    = project.name | slugify -%}
+          {%- assign project_img   = project.img -%}
+          {%- assign project_title = project.title -%}
+          {%- assign project_name  = project.name -%}
+          {%- assign project_desc  = project.description -%}
+          {%- assign project_tools = project.tools -%}
+          {%- assign project_url   = project.url -%}
+          {%- assign project_logo  = project.logo -%}
+
+          {%- if project.tools -%}
+            {% include project-card.html %}
+          {%- else -%}
+            {% include link-card.html %}
+          {%- endif -%}   
+      {% endfor %}
+    </div>
+    {%- endif -%}
+{%- if include.content.title -%}
+  </div>
+</section>
+<!-- Section -->
+{%- endif -%}

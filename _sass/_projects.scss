@@ -1,0 +1,12 @@
+// Variables
+$rounded-borders: 15px;
+
+.project.card {
+    border-radius: $rounded-borders;
+    text-decoration: none !important;
+//    margin: 10px auto;
+}
+
+a.project.card:hover {
+    box-shadow: 0 0 5px $primary;
+}

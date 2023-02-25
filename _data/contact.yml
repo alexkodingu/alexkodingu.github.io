@@ -1,5 +1,5 @@
 japan:
-  title: "My Japanese profile"
+  title: "Japanese profile"
   list:
     - name: "Lancers"
       title: "Lancers"
@@ -9,11 +9,9 @@ japan:
       url: "https://www.wantedly.com/id/alexkodingu"
 email:
   title: "E-mail"
-  # toto@toto.com in base64
-
-lancers:
-  title: "Lancers.jp"
-  text: "You can contact me on lancers"
-  button:
-    text: "my profile"
-    link: "https://www.lancers.jp/profile/alexkodingu"
+  text: "My unusual domain can be victim of spam filter. Think to allow my email or check your junk box :-)"
+  email: bWFpbHRvOmhlbGxvQGFsZXhrb2Rpbmd1Lnh5eg==
+  pgp: 
+    body: "You can send me a secure message with PGP"
+    sign: "0xCC9E45D7F678FB3414F7CE920596E73FAAC0FF52"
+    db: https://keyserver.ubuntu.com/pks/lookup?search=CC9E45D7F678FB3414F7CE920596E73FAAC0FF52&fingerprint=on&op=index

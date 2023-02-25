@@ -2,10 +2,11 @@ about:
   title: About
   body: "Versatile DevOps engineer with a great understanding of IT system. I'm a curious person that likes to always learn new technologies that improve our standards.
 I enjoyed enhancing the infrastructure and methodology to deliver better services. Finding the best solution matching the organization and actual system is always challenging.  
-I'm seeking to strengthen my skill and outcome new challenge. When I'm not behind a computer, you have high chance to find me in a pool or on a bike"
+I'm seeking to strengthen my skill and outcome new challenge."
 
 education:
   title: Ecudation
+  side: right
   list:
     - title: Engineering degree in computing, multimedia and networking (France)
       from: 2009

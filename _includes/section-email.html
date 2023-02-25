@@ -1,0 +1,40 @@
+{% comment %}
+    parameter: 
+      content{
+        title: **title of section**
+        email: **email in base64 to obfuscate a bit**
+        pgp:
+          body: **text to show before**
+          sign: **pgp pub signature**
+          db: **url to pgp db**
+      }
+      class: **css class to add section, example: grey**
+{% endcomment %}
+
+<!-- Section -->
+<section class="page-section {{ include.class }}" id="{{ include.content.title | downcase }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">
+          <a href="javascript:window.location.href=atob('{{ include.content.email }}')" aria-label="email">
+            <i class="fas fa-envelope"></i> email 
+          </a>
+        </h2>
+        <div class="text-muted"> 
+          {{ include.content.text }}
+        </div>
+        {{% if include.content.pgp %}}
+        <div class="text-muted"> 
+          {{ include.content.pgp.body }}
+          <a href="{{ include.content.pgp.db }}"> {{ include.content.pgp.sign }} </a>
+        </div>
+        {{% endif %}}
+      {%- if include.content.body -%}
+        <div class="text-muted">{{ include.content.body | markdownify }}</div>
+      {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section -->

@@ -14,7 +14,10 @@ $text-white: rgba(white, .9);
 
 $rounded-borders: 15px;
 
-.timeline-body {
+$sides: left, right;
+
+@each $side in $sides {
+.timeline-body-#{$side} {
     position: relative;
     border-radius: 0 $rounded-borders $rounded-borders 0;
     padding: 5px 0;
@@ -26,8 +29,8 @@ $rounded-borders: 15px;
       height: 100%;
       background-color: $primary;
       position: absolute;
-      left: -4px;
       top: 0;
+      #{$side}: -4px;
     }
   
     .timeline-item {
@@ -42,9 +45,9 @@ $rounded-borders: 15px;
         border: 4px solid $primary;
         background-color: $light;
         position: absolute;
-        left: -12px;
         top: 8px;
         z-index: 10;
+        #{$side}: -12px;
       }
   
       .content {
@@ -60,3 +63,4 @@ $rounded-borders: 15px;
       }
     }
   }
+}

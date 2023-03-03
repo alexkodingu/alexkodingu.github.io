@@ -83,21 +83,23 @@ skills:
 
   - title: CI/CD
     percentage: 75
-    color: info
+    color: secondary
     name: Gitlab, github, bitbucket, circle ci, Artifactory, SonarQube
 
   - title: Container
     name: Docker, Kubernetes, Helm, gatekeeper
     percentage: 75
-    color: sucess
+    color: primary
 
   - title: Network
     name: Firewall, VPN, BGP, MPLS
     percentage: 60
+    color: warning
 
   - title: Migration
     name: Carbonite Move, cloudendure, Huawei SMS
     percentage: 75
+    color: info
 
   - title: Language
     list:
@@ -109,8 +111,9 @@ skills:
         color: success
       - name: Japanese
         percentage: 10
-        color: success
+        color: secondary
 
   - title: Soft
     percentage: 100
-    name: Agile, autonomous, knowledge sharing, critical thinking, team spirit
+    name: Agile, autonomous, knowledge sharing, team spirit
+    color: warning

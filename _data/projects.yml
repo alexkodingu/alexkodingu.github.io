@@ -9,50 +9,133 @@ list:
   -
     name: Tooling for cloud training session
     date: 2022-06
-    desc: Development of tools to ease the training session. Python's scripts were managing the users and environments. The scripts were tested and running through gitlab-ci. At each session, the trainer should execute a schedule pipeline manually with required parameters.
-    tools:  [HuaweiCloud, Openstack, python, pytest, terraform, gitlab, sonarqube]
+    desc: Development of tools to ease the training session. Python's scripts were managing the users and environments. The scripts were tested and running through GitLab-ci. At each session, the trainer should execute a schedule pipeline manually with required parameters.
+    tools:  [HuaweiCloud, OpenStack, python, pytest, terraform, GitLab, SonarQube]
   -
     name: Scheduler for HuaweiCloud
     date: 2022-08
-    desc: Python's scripts running into function, stopping and starting the resources depending of their tags. A terraform module was made for an easy deploiement.
-    tools:  [HuaweiCloud, CloudFunction, python, py-test, terraform, gitlab, sonarqube, artifactory]
+    desc: Python's scripts running into function, stopping and starting the resources depending on their tags. A terraform module was made for an easy deployment.
+    tools:  [HuaweiCloud, CloudFunction, python, py-test, terraform, GitLab, SonarQube, artifactory]
   -
     name: Improve KPI visibility
     date: 2022-01
-    desc: Passing the projects board's data into an elastic Stack to ease the global visibility of our deals and pre-sales.
-    tools:  [gitlab, Elastic Stack, kubernetes, nginx Ingress]
+    desc: Passing the projects board's data into an Elastic Stack to ease the global visibility of our deals and pre-sales.
+    tools:  [GitLab, Elastic Stack, Kubernetes, nginx Ingress]
   -
     name: FinOps on IBMCloud
     date: 2021-03
     desc: Python application running in cloud function reducing the cost of Kubernetes clusters in IBM cloud.
-    tools:  [github, CircleCI, sonarqube, artifactory, IBMCloud, cloudfunction, kubernetes, python, py-test, terraform]
+    tools:  [github, CircleCI, SonarQube, artifactory, IBMCloud, cloudfunction, Kubernetes, python, py-test, terraform]
   -
     name: Helm factory
     date: 2021-10
-    desc: Helm repository with helm chart template to ease squads own development. Each chart was tested in CI with kind and was validating security compliancy of the company gatekeeper policy before the publication.
-    tools:  [github, CircleCI, sonarqube, artifactory, kubernetes, helm, kind, OPA Gatekeeper]
+    desc: Helm repository with helm chart template to ease squads own development. Each chart was tested in CI with kind and was validating security compliance of the company gatekeeper policies before the publication.
+    tools:  [github, CircleCI, SonarQube, artifactory, Kubernetes, helm, kind, OPA Gatekeeper]
   -
     name: Containerize applications
     date: 2021-10
-    desc: Create dockerfile and ease it's deployment in the cloud with terraform and cloud-init on virtual server.
-    tools:  [bitbucket, docker, terraform, cloud-init, openstack]
+    desc: Create Dockerfile and ease it's deployment in the cloud with terraform and cloud-init on virtual server.
+    tools:  [Bitbucket, Docker, terraform, cloud-init, OpenStack]
   -
     name: Infrastructure deployment
     date: 2021-08
-    desc: Deploy cloud infrastructure with terraform from gitlab.
-    tools:  [openstack, gitlab, terraform]
-
+    desc: Deploy cloud infrastructure with terraform from GitLab.
+    tools:  [OpenStack, GitLab, terraform]
   -
-    name: Example no link
-    date: 2018-01
-    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    tools:  [github, jekyll]
-
+    name: Apps deployment in k8s
+    date: 2021-12
+    desc: Improve the apps deployment and ease the configuration of the entrypoint with istio technologie. Using a managed K8S services and the the load balancer AAS of the platform.
+    tools:  [Kubernetes, GitLab, istio]
   -
-    name: Example with link
+    name: Create and Provide training
+    date: 2020-05
+    desc: Creation of training to initiate cloud mindset in 3 days for the participant.
+    tools:  [OpenStack, terraform, OpenStack cli, OpenStack Heat, GitLab, webex]
+  -
+    name: Design network solution for cloud
+    date: 2018-12
+    desc: Testing and designing with cloud provider the creation of a central solution to secure access in the cloud and their on-premise.
+    tools:  [Stormshield, Fortinet, cloud, DirectConnect, peering, BPG]
+  -
+    name: Migration to the cloud
     date: 2018-01
-    desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    tools:  [github, jekyll]
+    desc: Design architecture for the customer rebuild in the cloud and using the best of news services object storage, security group, AsAService product. Terraform used for infrastructure
+    tools:  [HuaweiCloud, terraform]
+  -
+    name: Troubleshoot multi-site design
+    date: 2019-12
+    desc: Design and troubleshoot SI issues on multisite
+    tools:  [OpenStack, VMware, DirectConnect, vpn, firewall]
+  -
+    name: Cloud migration assessment
+    date: 2019-10
+    desc: Often made first step of migration step for the customers to see the possibilities
+    tools:  [assessment]
+  -
+    name: Presale
+    date: 2019-10
+    desc: In some cases, presale assistance when the infrastructure and the requirement are complexes.
+    tools:  []
+  -
+    name: Application transformationhardening
+    date: 2019-10
+    desc: Transform applications to have a more efficient use of the cloud
+    tools:  [terraform, OpenStack Heat, cloud formation, Object Storage, Loadbalancer AAS, BDD AAS, auto-scalling]
+  -
+    name: Infrastructure migration
+    date: 2018-08
+    desc: Migrate server to the cloud and updating tools, agents, drivers when needed
+    tools:  [Carbonite Move, Cloudendure, Azure Migrate]
+  -
+    name: Application's integration in secure SI
+    date: 2015-01
+    desc: Design and apply application integration, taking care of the requirements of the application and the system security
+    tools:  [VMware, HyperV, firewall, Vlan, IPS, QOS, linux, windows, ldap]
+  -
+    name: SI hardening
+    date: 2015-01
+    desc: Apply best practices to secure the hypervisor, operating system and application
+    tools:  [VMware, HyperV, windows, linux, apache, iis]
+  -
+    name: Automatic installation of infrastructure
+    date: 2014-01
+    desc: After racking and network plug, an external system was plug to run as orchestrator to configure host by PXE, then deploying hypervisor and importing VM, then the network was secure.
+    tools:  [PXE, HyperV, Stormshield, bash, powershell Saltstack]
+  -
+    name: On site support
+    date: 2014-01
+    desc: "Support and troubleshooting all kinds of issues at customer's location: network, hardware, virtualization, Linux, Windows, Log analysis and tickets at manufacturers when needed."
+    tools:  [VMware, HyperV, networking]
+  -
+    name: Improve monitoring solution
+    date: 2015-01
+    desc: Global monitoring of the platform health was critical. We had to improve the agents configuration, consolidate data, the monitoring views and the alert level. It helped the administrator to prevents fatal issues.
+    tools:  [Nagios, Elastic stack]
+  -
+    name: Android app for IOT
+    date: 2012-01
+    desc: "Development of an application to enhance human interaction with its smart home trough NFC and QRcode to retrive data or execute IOT saved scripts."
+    tools:  [Java, Android, NFC]
+  -
+    name: Web development
+    date: 2011-01
+    desc: Creation of web interface to manage and views the smart home. Improvement of existing back-end depending on the use case evolution.
+    tools:  [PHP, Zend Framework, JS, CSS, HTLM, DOJO, MySQL]
+  -
+    name: Backend for IOT
+    date: 2010-01
+    desc: PHP development of API for Home Automation IOT with Zend Framework. Design of data model to fulfil the needs of the use cases.
+    tools:  [PHP, Zend Framework, MySQL, linux]
+  -
+    name: Protocol testing for IOT
+    date: 2009-10
+    desc: "Testing various telecommunication protocol for the Home Automation use cases: Zigbee, Bluetooth, proprietary"
+    tools:  [Telecomunication]
+  -
+    name: Data management for car IOT
+    date: 2012-01
+    desc: Assistance for data management of the project "Electric Odyssey". They made a world tour in an electric car with on board data collector livestreaming data to the server (including GPS)
+    tools:  [MySQL]
     link: 
-      url: "https://github.com/"
-      type: "github"
+      url: "https://www.dailymotion.com/video/xtgtgv"
+      type: "fas fa-external-link-alt"

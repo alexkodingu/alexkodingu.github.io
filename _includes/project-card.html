@@ -5,7 +5,7 @@
         {%- endif -%}
         <h5 class="card-title text-center">
             {%- if project.link -%}
-                <a href="{{ project.link.url }}" class="fab fa-{{ project.link.type }}" ></a> |&nbsp;
+                <a href="{{ project.link.url }}" target="_blank"><i class="{{ project.link.type }}"></i></a> |&nbsp;
             {%- endif -%}
             {{ project.name }}
         </h5>

@@ -36,6 +36,7 @@ permalink: /search
 <script>
 
   function fixcard(){//dirty
+
     // fix tags display
     //class of tag miss 1 on purpose to find them and make good class for new one
     const collection = document.getElementsByClassName("badge badge-pill text-light bg-primary border-primary ml-")
@@ -51,13 +52,31 @@ permalink: /search
       }
       collection[0].remove()
     }
+
+
     //fix url display
     const titlescollection = document.getElementsByClassName("card-title text-center")
+    //quick fix footer here:/ 
+    footer = document.getElementById('footer');
+    if(titlescollection.length > 6){
+      footer.style.removeProperty('position');
+      footer.style.position = "flex";
+    }else{
+      footer.style.removeProperty('position');
+      footer.style.position = "fixed";
+    }
+
+
     for ( let i in titlescollection){
-      if (titlescollection[i].children[0].pathname == "/%7Burl%7D"){ //too much dirty
-        titlescollection[i].textContent = titlescollection[i].textContent.slice(20)
+      try{
+        if (titlescollection[i].children[0].pathname == "/%7Burl%7D"){ //too much dirty
+          titlescollection[i].textContent = titlescollection[i].textContent.slice(20)
+        }
+      }catch(err){
+        //find the trouble here soon..
       }
     }
+
   }
   const config = { attributes: true, childList: true, subtree: true };
   const observer = new MutationObserver(fixcard);
@@ -72,6 +91,7 @@ permalink: /search
     noResultsText: '{{ site.search.no_results}}'
   })
   setTimeout(() => {
+    // manage parameters pass in url
     let params = new URLSearchParams(document.location.search);
     sstring=params.get("q")
     if (sstring != ""){

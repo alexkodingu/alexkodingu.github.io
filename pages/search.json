@@ -1,0 +1,14 @@
+---
+layout: none
+---
+[
+    {% for project in site.data.projects.list %}
+    {
+    "title"    : "{{ project.title | escape }}",
+    "date"     : "{{ project.date }}",
+    "desc"     : "{{ project.desc  | strip_html | strip_newlines }}",
+    "tags"     : "{{ project.tags | join: ', ' | escape  }}",
+    "url"     : "{{ project.link.url }}"
+    } {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]

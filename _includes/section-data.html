@@ -22,14 +22,14 @@
       {% for project in include.content.list  %}
           {%- assign project_id    = project.name | slugify -%}
           {%- assign project_img   = project.img -%}
-          {%- assign project_title = project.title -%}
-          {%- assign project_name  = project.name -%}
-          {%- assign project_desc  = project.description -%}
-          {%- assign project_tools = project.tools -%}
-          {%- assign project_url   = project.url -%}
+          {%- assign title         = project.title -%}
+          {%- assign desc          = project.desc -%}
+          {%- assign tags          = project.tags -%}
+          {%- assign url           = project.link.url -%}
+          {%- assign urltype       = project.link.type -%}
           {%- assign project_logo  = project.logo -%}
 
-          {%- if project.tools -%}
+          {%- if project.tags -%}
             {% include project-card.html %}
           {%- else -%}
             {% include link-card.html %}

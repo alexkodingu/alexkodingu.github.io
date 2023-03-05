@@ -1,18 +1,20 @@
 <div class="project card">
     <div class="card-body">
-        {%- if project.img -%}
-            <img class="card-img-top" src="{{ project.img }}" alt="{{ project.name }}" />
+        {%- if img -%}
+            <img class="card-img-top" src="{{ img }}" alt="{{ title }}" />
         {%- endif -%}
         <h5 class="card-title text-center">
-            {%- if project.link -%}
-                <a href="{{ project.link.url }}" target="_blank"><i class="{{ project.link.type }}"></i></a> |&nbsp;
+            {%- if url -%}
+                <a href="{{ url }}" target="_blank"><i class="{{ urltype }}"></i></a> |&nbsp;
             {%- endif -%}
-            {{ project.name }}
+            {{ title }}
         </h5>
-        <p class="card-text">{{ project.desc }}</p>
+        <p class="card-text">{{ desc }}</p>
         <p class="card-text">
-            {%- for tool in project.tools -%}
-            <span class="badge badge-pill text-light bg-primary border-primary ml-1">{{ tool }}</span>
+            {%- for tool in tags -%}
+            <a href="{{site.search.perma}}?{{site.search.key}}={{ tool }}" class="badge badge-pill text-light bg-primary border-primary ml-1">
+                {{ tool }}
+            </a>
             {%- endfor -%}
         </p>
     </div>

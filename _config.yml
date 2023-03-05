@@ -28,6 +28,11 @@ home:
   #text: DevOps Engineer
   text: "Hungry tech learner who improve systems efficiency and security"
 
+search:
+  perma: "/search"
+  key: "q"
+  hint: tag, title, tech, etc
+  no_results: Oops! No results found.
 social:
   - url: https://gitlab.com/alexkodingu
     icon: "fab fa-gitlab"

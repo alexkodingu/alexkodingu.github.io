@@ -24,14 +24,16 @@
           {%- assign project_img   = project.img -%}
           {%- assign title         = project.title -%}
           {%- assign desc          = project.desc -%}
-          {%- assign tags          = project.tags -%}
-          {%- assign url           = project.link.url -%}
-          {%- assign urltype       = project.link.type -%}
-          {%- assign project_logo  = project.logo -%}
 
           {%- if project.tags -%}
+          
+            {%- assign tags          = project.tags -%}
+            {%- assign url           = project.link.url -%}
+            {%- assign urltype       = project.link.type -%}
+
             {% include project-card.html %}
           {%- else -%}
+            {%- assign url = project.url -%}
             {% include link-card.html %}
           {%- endif -%}   
       {% endfor %}

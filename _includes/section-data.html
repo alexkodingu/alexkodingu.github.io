@@ -17,7 +17,7 @@
     </div>
 {%- endif -%}
     {%- if include.content -%}
-    <div class="card-columns">
+    <div class="row row-cols-1 row-cols-md-2 {% if page.permalink == '/projects/' %}row-cols-md-3 {% endif %}g-4">
       <!-- Local Projects -->
       {% for project in include.content.list  %}
           {%- assign project_id    = project.name | slugify -%}
@@ -26,7 +26,7 @@
           {%- assign desc          = project.desc -%}
 
           {%- if project.tags -%}
-          
+            {%- assign date          = project.date -%}      
             {%- assign tags          = project.tags -%}
             {%- assign url           = project.link.url -%}
             {%- assign urltype       = project.link.type -%}

@@ -100,7 +100,7 @@ list:
     title: Automatic installation of infrastructure
     date: 2014-01
     desc: After racking and network plug, an external system was plug to run as orchestrator to configure host by PXE, then deploying hypervisor and importing VM, then the network was secure.
-    tags:  [PXE, HyperV, Stormshield, bash, powershell Saltstack]
+    tags:  [PXE, HyperV, Stormshield, bash, powershell, Saltstack]
   -
     title: On site support
     date: 2014-01

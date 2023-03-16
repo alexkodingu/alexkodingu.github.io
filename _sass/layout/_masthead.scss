@@ -1,15 +1,19 @@
+body.home {
+  background-image: url("#{$header-image}");
+  background-repeat: no-repeat;
+  //background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+
 // Styling for the masthead
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("#{$header-image}");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
   .intro-text {
     padding-top: 150px;
-    padding-bottom: 100px;
+    //padding-bottom: 100px;
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
@@ -26,11 +30,11 @@ header.masthead {
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 700px){
   header.masthead {
     .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
+      padding-top: 150px;
+      padding-bottom: 150px;
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;
@@ -46,5 +50,17 @@ header.masthead {
         @include heading-font;
       }
     }
+  }
+}
+
+.home #footer{
+  background-color: unset !important;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  .copyright{
+    color: white;
   }
 }

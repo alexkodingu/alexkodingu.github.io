@@ -11,11 +11,17 @@ a.project.card:hover {
     box-shadow: 0 0 5px $primary;
 }
 
-.project a {
+.card-text a {
     text-decoration:none;
     &:hover {
-        background-color: #0062cc !important;
-        color: #cbd3da !important;
+        background-color: $primary !important;
+        color: $black !important;
+    }
+}
+
+.card-title a {
+    &:hover {
+        color: blue !important;
     }
 }
 

@@ -22,6 +22,16 @@ author     : Alexandre
   # path: assets\img\clients\creative-market.jpg
   # height: 60 #height in px, defaults to 52px
 
+
+style:
+#Color Customization
+  #highlight: "#54bfff"
+  white: "#FF0000"
+  black: "#000"
+  header-image: "/assets/img/header-dark2.jpg"
+  contact-image: "/assets/img/contact.png"
+  favicon: "/assets/img/favicon.png"
+
 home:
   avatar: /assets/img/avatar.jpg
   name: Alexandre
@@ -33,6 +43,7 @@ search:
   key: "q"
   hint: tag, title, tech, etc
   no_results: Oops! No results found.
+
 social:
   - url: https://gitlab.com/alexkodingu
     icon: "fab fa-gitlab"

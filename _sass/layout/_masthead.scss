@@ -1,5 +1,5 @@
 body.home {
-  background-image: url("#{$header-image}");
+  background-image: url($header-image);
   background-repeat: no-repeat;
   //background-attachment: scroll;
   background-position: center center;

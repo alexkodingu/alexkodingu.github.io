@@ -25,9 +25,6 @@ layout: None
       {%- if site.home.body -%}
           <div>{{ site.home.body | markdownify }}</div>
       {%- endif -%}
-      {%- if site.data.home.header.button -%}
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}">{{ site.data.home.header.button }}</a>
-      {%- endif -%}
       </div>
     </div>
   </header>

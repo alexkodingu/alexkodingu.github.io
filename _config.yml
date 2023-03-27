@@ -50,6 +50,15 @@ social:
   - url: https://github.com/alexkodingu
     icon: "fab fa-github"
 
+### Posts ###
+permalink: /blog/:title
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
 markdown: kramdown
 
 # Uncomment following line to use Formspree form ID based URL instead of email based URL

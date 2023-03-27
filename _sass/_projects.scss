@@ -21,7 +21,7 @@ a.project.card:hover {
 
 .card-title a {
     &:hover {
-        color: blue !important;
+        color: #0000ff !important;
     }
 }
 
@@ -58,5 +58,18 @@ button#search-input{
     color: black;
     &:hover {
         color: $primary;
+    }
+}
+
+#blog ul{
+    list-style-type: none;
+}
+
+#blog a{
+    text-decoration:none;
+    color: blue;
+    &:hover {
+        //background-color: $primary !important;
+        color: $primary !important;
     }
 }

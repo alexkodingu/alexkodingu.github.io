@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% include nav.html %}
 
 {% if page.background == "grey" or page.background == "gray" %}
 <script>
@@ -10,7 +9,6 @@ document.getElementById("page-top").className="bg-light";
 {% endif %}
 
 {%- if page.title -%}
-<div class="container" id="pagecontainer"></div>
 <div class="container" id="pagecontainer">
   <section class="page-section" id="{{ page.title | downcase }}">
       <div class="container">

@@ -7,6 +7,7 @@
 
 // Custom colors
 $primary: {{ site.style.highlight | default: "#fed136" }} !default;
+$secondary: "#0000ff" !default;
 $white: {{ site.style.white | default: '#fff' }} !default;
 $black: {{ site.style.black | default: "#000" }} !default;
 
@@ -22,6 +23,7 @@ $contact-image: "{{ site.style.contact-image }}" ;
 @import "components/navbar.scss";
 @import "components/client-scroll.scss";
 @import "projects.scss";
+@import "markdown.scss";
 
 // Layout
 @import "layout/masthead.scss";

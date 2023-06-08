@@ -7,8 +7,6 @@ Like many people using ssh key for git or authentication, it’s been a pain to 
 
 ## KeePassXC: storing ssh key & adding to the agent
 
-By default, I was using the ssh-agent on Linux and Putty pageant on Windows. For this tools, usually you need to add the key  that you want and enter the password (usually you should always have some to be sure if it's lost, it can't be use at it. Of course i know usually the password are bad and would not stay long to brut force).
-
 It’s already an incredible tool to store your account and password. But with the features around the ssh key, this tool is amazing. You can look for detail about those feature on their [documentations](https://KeePassXC.org/docs/#faq-ssh-agent-keys)
 
 ### 1. Enable SSH agent integration in the application

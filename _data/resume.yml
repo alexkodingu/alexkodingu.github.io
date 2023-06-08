@@ -5,7 +5,7 @@ I enjoyed enhancing the infrastructure and methodology to deliver better service
 I'm seeking to strengthen my skill and outcome new challenge."
 
 education:
-  title: Ecudation
+  title: Education
   side: right
   list:
     - title: Engineering degree in computing, multimedia and networking (France)
@@ -32,10 +32,6 @@ certification:
 work:
   title: Work experience
   list:
-    - title: Freelance
-      from: February 2022
-      to: present
-      description: Starting new chalenge, to provide my skills directly.
   
     - title: DevOps Engineer (Orange Business Services, France)
       from: June 2020
@@ -55,7 +51,7 @@ work:
     - title: PHP Developer (France)
       from: March 2013
       to: April 2013
-      description: I was developing upgrade of an application to manage backbone's troubles on large telecomuncation network.
+      description: I was developing upgrade of an application to manage backbone's troubles on large telecommunication network.
 
     - title: R&D engineer for Home Automation IoT (Orange, France)
       from: September 2009
@@ -73,7 +69,7 @@ skills:
     color: success
     name: Openstack, Huawei cloud, Azure, IBM cloud, AWS, GCP, VMware
 
-  - title: Programmation
+  - title: Programming
     percentage: 80
     color: info
     name: Bash, Python, Terraform, Powershell
@@ -94,7 +90,7 @@ skills:
     color: warning
 
   - title: Migration
-    name: Carbonite Move, cloudendure, Huawei SMS
+    name: Carbonite Move, CloudEndure, Huawei SMS
     percentage: 75
     color: info
 

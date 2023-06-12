@@ -40,7 +40,7 @@ function create_li(info){
     const a =  document.createElement('a');
     ul.classList.add("resume")
     a.textContent = "[" + info.title + "] " + info.desc;
-    a.href= window.location.hostname + "/" + info.category + "#" + info.title
+    a.href= "/" + info.category + "#" + info.title
     li.appendChild(a);
     ul.appendChild(li)
 }
@@ -77,7 +77,7 @@ function create_project(info){
     for (x in tags){
         value=tags[x].trim()
         const newtag = tagTemplate.cloneNode(true);
-        newtag.href = window.location.hostname+"/search?q="+value
+        newtag.href = "/search?q=" + value
         //newtag.classList = "badge rounded-pill text-light bg-primary border-primary ms-1"
         newtag.textContent = value
         tagParent.appendChild(newtag);
@@ -114,7 +114,7 @@ function create_post(info){
     for (x in tags){
         value=tags[x].trim()
         const newtag = tagTemplate.cloneNode(true);
-        newtag.href = window.location.hostname+"/search?q="+value
+        newtag.href = "/search?q=" + value
         newtag.textContent = value
         tagParent.appendChild(newtag);
     }

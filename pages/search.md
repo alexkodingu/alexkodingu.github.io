@@ -47,7 +47,7 @@ permalink: /search
     </div>
   </div>
 
-<script src="/assets/js/simple-jekyll-search.mod.js"></script>
+<script src="/assets/js/simple-jekyll-search.min.js"></script>
 <!-- Configuration -->
 <script src="/assets/js/customize-search.js"></script>
 

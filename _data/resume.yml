@@ -32,13 +32,17 @@ certification:
 work:
   title: Work experience
   list:
-  
+   
+    - title: DevOps Engineer (Rakuten, Japan)
+      from: June 2023
+      description: Developing new services in the Incubation Service Development Department.
+   
     - title: DevOps Engineer (Orange Business Services, France)
       from: June 2020
       to: October 2022
       description: Transforming our customers IT to improve their cloud usages with the twelve-factor methodology.
   
-    - title: Engineer cloud expert (Orange Business Services, France)
+    - title: Cloud Engineer (Orange Business Services, France)
       from: February 2017
       to: June 2020
       description: Assisting customers to embrace cloud technologies.
@@ -53,7 +57,7 @@ work:
       to: April 2013
       description: I was developing upgrade of an application to manage backbone's troubles on large telecommunication network.
 
-    - title: R&D engineer for Home Automation IoT (Orange, France)
+    - title: R&D engineer for Home Automation IoT - apprentice (Orange, France)
       from: September 2009
       to: September 2012
       description: Creation of Home Automation application to make the home smarter.

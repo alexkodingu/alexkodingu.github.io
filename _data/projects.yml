@@ -134,7 +134,7 @@ list:
   -
     title: Data management for car IOT
     date: 2012-01
-    desc: Assistance for data management of the project 'Electric Odyssey'. They made a world tour in an electric car with on board data collector livestreaming data to the server (including GPS)
+    desc: Assistance for data management of the project 'Electric Odyssey'. They made a world tour in an electric car with on board data collector streaming data to the server.
     tags:  [MySQL]
     link: 
       url: "https://www.dailymotion.com/video/xtgtgv"

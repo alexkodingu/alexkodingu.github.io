@@ -2,13 +2,66 @@
 layout: none
 ---
 [
-    {% for project in site.data.projects.list %}
+  {% for project in site.data.projects.list %}
     {
-    "title"    : "{{ project.title | escape }}",
-    "date"     : "{{ project.date }}",
-    "desc"     : "{{ project.desc  | strip_html | strip_newlines }}",
-    "tags"     : "{{ project.tags | join: ', ' | escape  }}",
-    "url"     : "{{ project.link.url }}"
-    } {% unless forloop.last %},{% endunless %}
-    {% endfor %}
+        "title"    : "{{ project.title | escape }}",
+        "category" : "project",
+        "date"     : "{{ project.date }}",
+        "desc"     : "{{ project.desc  | strip_html | strip_newlines }}",
+        "tags"     : "{{ project.tags | join: ', ' | escape  }}",
+        "url"      : "{{ project.link.url }}"
+    },
+  {% endfor %}
+  {% for post in site.posts %}
+    {
+        "title"    : "{{ post.title | escape }}",
+        "category" : "post",
+        "tags"     : "{{ post.tags | join: ', ' }}",
+        "url"      : "{{ site.baseurl }}{{ post.url }}",
+        "date"     : "{{ post.date | date_to_string }}"
+    },
+   {% endfor %}
+   {% comment %} about {% endcomment %}
+    {
+        "title"    : "{{ site.data.resume.about.title | escape }}",
+        "category" : "resume",
+        "desc" : "{{ site.data.resume.about.body | escape }}"
+    },
+    {% comment %} education {% endcomment %}
+    {% for el in site.data.resume.education.list %}
+    {
+        "title"    : "{{ site.data.resume.education.title | escape }}",
+        "category" : "resume",
+        "date"     : "{{ el.from }} - {{ el.to }}",
+        "desc"     : "{{ el.title }}"
+    },
+   {% endfor %}
+   {% comment %} certification {% endcomment %}
+   {% for el in site.data.resume.certification.list %}
+   {
+       "title"    : "{{ site.data.resume.certification.title | escape }}",
+       "category" : "resume",
+       "date"     : "{{ el.from }}",
+       "desc"     : "{{ el.title }}"
+   },
+  {% endfor %}
+  {% comment %} work {% endcomment %}
+  {% for el in site.data.resume.work.list %}
+  {
+      "title"    : "{{ site.data.resume.work.title | escape }}",
+      "category" : "resume",
+      "date"     : "{{ el.from }} {% if el.to %} — {{ el.to }} {% endif %}",
+      "desc"     : "{{ el.title }}",
+      "value"     : "{{ el.description }}"
+  },
+  {% endfor %}
+  {% comment %} skill {% endcomment %}
+  {% for el in site.data.resume.skills %}
+  {
+      "title"    : "skill",
+      "category" : "resume",
+      "desc"     : "{{ el.title }}",
+      "value"    : "{{ el.name }}"
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
 ]

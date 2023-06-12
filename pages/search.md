@@ -3,97 +3,54 @@ layout: page
 permalink: /search
 ---
 
-{% capture result_elem %}
-  {%- assign title         = "{title}" -%}
-  {%- assign desc          = "{desc}" -%}
-  {%- assign date          = "{date}" -%}
-  {%- assign tags          = "{tags}"-%}
-  {%- assign url           = "{url}" -%}
-  {%- assign urltype           = "fas fa-external-link-alt" -%}
-  {%- assign tagclass      = "border-primary ms-" -%}
-  
-  {% include project-card.html %}
-
-{% endcapture %}
-
 <section class="page-section {{ include.class }}" id="{{ include.content.title | downcase }}">
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-md-3 g-4" id="results-container" event="fixcard()">
 
+    <div id="404" style="display: none;">
+      <h4 class="section-heading text-uppercase">{{ site.search.no_results }}</h4>
     </div>
-    <div class="card-columns" id="new-results">
+
+    <div id="post" style="display: none;">
+      <h4 class="section-heading text-uppercase">Blog</h4>
+      <ul id="results-post" class="posts"> </ul>    
+    </div>
+
+    <div id="project" style="display: none;">
+      <h4 class="section-heading text-uppercase">Project</h4>
+      <ul class="row row-cols-1 row-cols-md-2 row-cols-md-3 g-4" id="results-project">
+      </ul>
+    </div>
+
+    <div id="resume" style="display: none;">
+      <h4 class="section-heading text-uppercase">Resume</h4>
+      <ul id="results-resume"> </ul>    
+    </div>
+
+    <div class="card-columns" id="new-results" style="display: none;"></div>
+
+    <div id="template" style="display: none;">
+
+      {%- assign title         = "{title}" -%}
+      {%- assign desc          = "{desc}" -%}
+      {%- assign date          = "{date}" -%}
+      {%- assign tags          = "{tags}"-%}
+      {%- assign url           = "{url}" -%}
+      {%- assign urltype       = "fas fa-external-link-alt" -%}
+      {% include project-card.html %}
+      
+      {%- assign title       = "{title}" -%}
+      {%- assign date        = "2012" -%}
+      {%- assign tags        = "{tags}" -%}
+      {%- assign url         = "{url}" -%}
+      {% include post-list-element.html %}
 
     </div>
   </div>
-</section>
-<script src="/assets/js/simple-jekyll-search.min.js"></script>
 
+<script src="/assets/js/simple-jekyll-search.mod.js"></script>
 <!-- Configuration -->
-<script>
+<script src="/assets/js/customize-search.js"></script>
 
-  function fixcard(){//dirty
-
-    // fix tags display
-    //class of tag miss 1 on purpose to find them and make good class for new one
-    const collection = document.getElementsByClassName("badge rounded-pill text-light bg-primary border-primary ms-")
-    while(collection.length > 0){
-      tags = collection[0].innerText.split(",")
-      parent = collection[0].parentElement
-      for ( let x in tags){
-        newa =  document.createElement('a')
-        newa.href = "{{site.search.perma}}?{{site.search.key}}="+tags[x].trim()
-        newa.classList = "badge rounded-pill text-light bg-primary border-primary ms-1"
-        newa.textContent = tags[x].trim()
-        parent.appendChild(newa);
-      }
-      collection[0].remove()
-    }
-
-    //fix url display
-    const titlescollection = document.getElementsByClassName("card-title text-center")
-    //quick fix footer here:/ 
-    footer = document.getElementById('footer');
-    if(titlescollection.length > 6){
-      footer.style.removeProperty('position');
-      footer.style.position = "flex";
-    }else{
-      footer.style.removeProperty('position');
-      footer.style.position = "fixed";
-    }
-
-
-    for ( let i in titlescollection){
-      try{
-        if (titlescollection[i].children[0].pathname == "/%7Burl%7D"){ //too much dirty
-          titlescollection[i].textContent = titlescollection[i].textContent.slice(3)
-        }
-      }catch(err){
-        //find the trouble here soon..
-      }
-    }
-
-  }
-  const config = { attributes: true, childList: true, subtree: true };
-  const observer = new MutationObserver(fixcard);
-  targetNode = document.getElementById("results-container");
-  observer.observe(targetNode, config);
-
-  var sjs = SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '/pages/search.json',
-    searchResultTemplate: '{{ result_elem | strip_newlines }}',
-    noResultsText: '{{ site.search.no_results}}'
-  })
-  setTimeout(() => {
-    // manage parameters pass in url
-    let params = new URLSearchParams(document.location.search);
-    sstring=params.get("q")
-    if (sstring != ""){
-      let field = document.getElementById('search-input')
-      field.value = sstring
-      sjs.search(sstring)
-    }
-  }, 500)
-
-</script>
+{% comment %}
+event="fixcard()">
+{% endcomment %}

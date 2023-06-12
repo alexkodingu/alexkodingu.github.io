@@ -7,19 +7,19 @@ Like many people using ssh key for git or authentication, it’s been a pain to 
 
 ## KeePassXC: storing ssh key & adding to the agent
 
-It’s already an incredible tool to store your account and password. But with the features around the ssh key, this tool is amazing. You can look for detail about those feature on their [documentations](https://KeePassXC.org/docs/#faq-ssh-agent-keys)
+It’s already an incredible tool to store your account and password. But with the features around the ssh key, this tool is amazing. You can look for detail about those feature on their [documentations](https://KeePassXC.org/docs/#faq-ssh-agent-keys).
 
 ### 1. Enable SSH agent integration in the application
 
-Depending on your OS, you will have various choices of agent to select. Some of them don’t support all the features of KeePassXC (look at the documentation for details)
+Depending on your OS, you will have various choices of agent to select. Some of them don’t support all the features of KeePassXC (look at the documentation for details).
 
 ![ssh app setting](/assets/img/blog/2023-06_ssh-agent.jpg)
 
 ### 2. Create your entries
 
-Create an entry for your ssh key with the name and password
-In the Advanced section, add the ssh key as an Attachments
-In the SSH Agent section, select what you want. more selection should be more secure but everything don’t work with all agent
+* Create an entry for your ssh key with the name and password
+* In the Advanced section, add the ssh key as an Attachments
+* In the SSH Agent section, select what you want. more selection should be more secure but everything don’t work with all agent
 ![ssh entry setting](/assets/img/blog/2023-06_ssh-entry.jpg)
 
 > Same for account management, It’s better, for security, to have multiple databases depending on your needs (each customer, projects, etc.).
@@ -62,7 +62,7 @@ _ home/
     |_ .git-config-b.conf
     |_ project1/
     |_ project2/
-  |_ customerC
+  |_ customerC/
     |_ .git-config-c.conf
     |_ project1/
     |_ project2/
@@ -90,7 +90,7 @@ path example for the config:
 ```txt
 _ home/
   |_ .gitconfig
-  |_ projects
+  |_ projects/
     |_ .git-bitbucket.conf
     |_ .git-github.conf
     |_ .git-gitlab.conf

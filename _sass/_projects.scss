@@ -61,11 +61,19 @@ button#search-input{
     }
 }
 
-#blog ul{
+.posts{
     list-style-type: none;
 }
 
-#blog a{
+.posts .badge{
+    text-decoration: none;
+    &:hover {
+        background-color: #fed136 !important;
+        color: #000 !important;
+      }
+}
+
+.posts .title{
     text-decoration:none;
     color: blue;
     &:hover {
@@ -73,3 +81,14 @@ button#search-input{
         color: $primary !important;
     }
 }
+
+.resume a,li {
+    list-style-type: none;
+    text-decoration:none;
+    color: blue;
+    &:hover {
+        //background-color: $primary !important;
+        color: $primary !important;
+    }
+}
+

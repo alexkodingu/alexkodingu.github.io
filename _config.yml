@@ -41,8 +41,8 @@ home:
 search:
   perma: "/search"
   key: "q"
-  hint: tag, title, tech, etc
-  no_results: Oops! No results found.
+  hint: "tag, title, tech, etc"
+  no_results: "Oops! No results found."
 
 social:
   - url: https://gitlab.com/alexkodingu

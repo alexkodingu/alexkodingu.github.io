@@ -1,0 +1,9 @@
+<li>
+    <span class="text-muted">{{ date | date_to_string }}</span> &raquo;
+    <a href="{{ url | relative_url }}" class="title">{{ title }}</a>
+    {%- for tag in tags -%}
+        <a href="{{site.search.perma}}?{{site.search.key}}={{ tag }}" class="badge rounded-pill text-light bg-primary border-primary ms-1">
+            {{ tag }}
+        </a>
+    {%- endfor -%}
+</li>

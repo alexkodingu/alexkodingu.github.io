@@ -82,13 +82,18 @@ button#search-input{
     }
 }
 
-.resume a,li {
-    list-style-type: none;
+.resume {
+    li {
+        list-style-type: none;
+
+    }
+    a {
     text-decoration:none;
     color: blue;
     &:hover {
         //background-color: $primary !important;
         color: $primary !important;
+        }
     }
 }
 

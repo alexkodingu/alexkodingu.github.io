@@ -26,7 +26,7 @@ Depending on your OS, you will have various choices of agent to select. Some of 
 
 ## Git configuration
 
-My experience brought me to work with various customers and git tools. It means using different identities and services (but sometimes the same). I’ve wasted a lot of time finding some keys or setting the local git config. KeePassXC solved my problem for keys, but for the setting, I only found the solution for git after looking a bit more at another developer that was [Using conditional include in git config](https://git-scm.com/docs/git-config#_includes) (as we always say RTFM ^_^).
+My experience brought me to work with various customers and git tools. It means using different identities and services (but sometimes the same). I’ve wasted a lot of time finding some keys or setting the local git config. KeePassXC solved my problem for keys, but for the setting, I only found the solution for git after looking a bit more at another developer that was [using conditional include in git config](https://git-scm.com/docs/git-config#_includes) (as we always say RTFM ^_^).
 
 I used them a bit differently depending on my working configuration. The idea is to set a default git-config that target a complete sub configuration.
 
